@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sansita+Swashed:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&family=Syne:wght@400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+    background: #000000;
+    
+}
+.page1{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.page1 nav{
+    font-family: "MuseoModerno", serif;
+    height: auto;
+    width: 100%; 
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2vw 2vw; 
+    list-style: none; 
+    border: 1px solid #928DD30F;
+    border-bottom: 1px solid rgb(124, 124, 124);
+
+}
+ 
+ 
+nav .middle{
+    font-family: "Staatliches";
+    font-size: 2.6vw;
+    transition: color 0.6s ease-in-out;
+    transition: scale 0.8s ease-in-out;
+    
+}
+nav .last{
+    display: flex;
+    gap: 2vw;
+}
+nav .last li{
+    font-family: "Red Hat Display";
+    font-size: 2vw;
+    transition: 0.3s ease-in;
+}
+nav .last li:hover{
+    border-bottom: 1px solid #C11D1D;
+}
+nav .middle:hover{
+    color: #C11D1D;
+    scale: 1.11;
+}
+
+.hero-page{
+    margin-top: 4.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-page h1{
+    width: 80%;
+    font-weight: 500;
+    text-align: center;
+    font-size: 8vw;
+    line-height: 8vw;
+    font-family: "Red Hat Display";
+    transition: color 0.8s ease-in;
+
+
+}
+.hero-page h1:hover{
+
+    text-shadow: 6px 6px 12px #C11D1D;
+ 
+}
+.hero-page img{
+    width: 100%;
+    margin-top: 2vw;
+    object-fit: cover;
+    border-radius: 1.5vw;
+    transition: scale 0.9s ease-in-out;
+    transition: box-shadow 0.7s ease;
+}  
+ 
+.page2 {
+    height: fit-content;
+    width: 100%;
+    padding: 1.5vw 2.8vw;
+
+}
+.page2 h2{
+    margin-top: 6vw;
+    padding-bottom: 2vw;
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "Red Hat Display";
+}
+
+.card-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card {
+    height: fit-content;
+    width: 31%;
+    margin-bottom: 6vw;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.1vw;
+    transition: border .4s ease-in-out;  
+}
+
+.card img:hover {
+    border: 5px solid #C11D1D; 
+    transition: border .4s ease-in-out;  
+}
+
+ 
+
+.card h4 {
+
+    counter-reset: #1B2128;
+    font-weight: 300;
+    font-size: 1.3vw;
+}
+
+.card p {
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 1vw;
+    font-weight: 500; 
+    padding-bottom: 0.7vw;
+    color: rgba(255, 255, 255, 1);
+        
+}
+.card .p1{
+    margin-top: 0.6vw;
+    font-size: 1.8vw;
+}
+
+  .button1{ 
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7vw;
+    background-color: #C11D1D;
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: 1vw;
+    padding: 1vw;
+    border-radius:0.6vw;
+   
+    border: none;
+    transition: 0.8 ease in ;
+    color: white;
+
+  }
+  .button1:hover{
+    background-color: #f55959;
+    color: white;
+  }
+
+.page3{
+    height: auto;
+    width: 100%;
+    padding: 3vw;
+    
+}
+.page3 p{
+    font-size: 2.8vw;
+    font-weight: 500;  
+    width: 45%;
+    font-family: "Red Hat Display";
+}
+ 
+.form{
+    margin: 6vw 0;
+    height: 52vw;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form h2{
+    font-size: 1.8vw;
+    font-family: "Red Hat Display";
+    font-weight: 400;
+     
+}
+.form p{
+    font-size: 1vw;
+    font-family: "Red Hat Display";
+    font-weight: 400;
+     
+}
+input{
+    color: #676464;
+    margin-top: 1.8vw;
+    height: 4vw;
+    width: 4vw;
+    font-size: 2vw;
+    text-align: center;
+    padding-left: 1vw;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0.5vw;
+    margin-left: .4vw;
+}
+
+.form button{
+    margin-top: 2.5vw;
+    background-color: #C11D1D;
+    padding: 0.7vw 10vw;
+    border: none;
+    border-radius: 0.5vw;
+    transition: 0.3s ease;
+    color: white;
+}
+.form button:hover{
+    color: white;
+    background: #e72929; 
+}
+.form h4{
+    margin-top: 2vw;
+    color: #C11D1D;
+    font-family: "Red Hat Display";
+    font-weight: 400;
+}
+
+footer{
+    padding: 2vw 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    font-size: 1.8vw;
+    color: #ffffff7b;
+    font-family: "Red Hat Display";
+}
+footer .follow{
+    font-family: "Red Hat Display";
+    border: 1px solid rgba(151, 130, 130, 0.461);
+    font-size: 1.2vw;
+    color: #FFFFFF;
+    padding: 0.2vw 1vw;
+    font-weight: 400;
+    transition: 0.5s ease-in;
+}
+footer .follow:hover{
+    background-color: #e33636;
+    border-radius: 0.5vw;
+}
+
+
+@media (max-width: 460px){
+   
+     
+    .page1 nav{
+        padding: 0.2vw 2.8vw;
+    
+    }
+    nav .first{ 
+        gap: 1.5vw;
+    }
+    
+    nav .first li{
+        font-size: 2vw;
+        transition: background-color 0.8s ease-;
+    }
+    nav .last li{
+        font-size: 2.6vw;
+    }
+  
+    nav .middle{ 
+        font-size: 3.2vw; 
+    }
+  
+    
+    .hero-page{
+        margin-top: 6.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-page h1{
+        font-size: 8vw; 
+        transition: color 0.8s ease-in;
+
+    
+    }
+    .hero-page h1:hover{
+
+        text-shadow: 4px 4px 8px rgba(153, 70, 248, 0.678);
+     
+    }
+    .hero-page img{
+        width: 98%;
+        margin-top: 2.8vw;
+        
+    }
+    .hero-page img:hover{
+        scale: 0.95;
+        box-shadow: 0 8px 29px rgba(203, 170, 241, 0.6); 
+    
+     
+    }
+
+    .page2 h2{
+        font-size: 7vw;
+    }
+    .card {
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 15vw;
+       
+    }
+    .card p {
+        text-align: center;
+        font-family: Archivo;
+            font-size: 2vw;
+            font-weight: 500; 
+            padding-bottom: 0.7vw;
+            color: rgba(255, 255, 255, 1);
+            
+    }
+    .card .p1{
+        margin-top: 0.6vw;
+        font-size: 2.8vw;
+    }
+   
+
+      .button1{
+        padding: 1vw 1.4vw;
+        margin-top: 0.7vw;
+       font-size: 2vw;
+    
+      }
+      .button1:hover{
+        background-color: #8e87f6;
+        color: white;
+      }
+    
+    .page3{
+        
+        padding: 1vw 0 3vw 15vw;
+    }
+    .page3 h3{
+        font-size: 3.8vw;
+        
+    }
+    .page3 p{
+        font-size: 2.1vw;
+    }
+    .page3 p{
+        margin-top: 3vw;
+        font-size: 2.8vw;
+        font-weight: 500;  
+        width: 85%;
+        font-family: "Red Hat Display";
+    }
+     
+    .form{
+        margin: 6vw 0;
+        height: 52vw;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form h2{
+        font-size: 4.8vw; 
+         
+    }
+    input{ 
+        margin-top: 2.2vw;
+        height: 7vw;
+        width: 7vw;
+        font-size: 3vw; 
+        padding-left: 1.6vw;
+    }
+    
+    .form button{ 
+        margin-top: 4vw;
+        padding: 0.7vw 13vw;
+       
+    }
+    
+    .form h4{
+        margin-top: 2vw;
+        color: #928DD3; 
+        font-weight: 400;
+    }
+    
+    footer{
+        padding: 2vw 5vw;
+         
+    }
+    footer p{
+        font-size: 2.8vw;
+        color: #ffffff97; 
+    }
+    footer .follow{ 
+        border: 1px solid rgba(151, 130, 130, 0.461);
+        font-size: 2.2vw;
+   
+        padding: 0.6vw 1.8vw;
+       
+    }
+    
+    }
